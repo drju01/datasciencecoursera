@@ -30,17 +30,17 @@ DATA DICTIONARY - xy_avg.txt
 	- 1-30, identifies the subject who performed the activity
 * Activity 
 	- activty peformed by subject - one of:
-	- WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
+		- WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 * SetType
 	- either "test" or "train", identifies the dataset type 
 * Signal
 	- signal type as described in "Human Activity Recognition Using Smartphones Dataset":
-	- "fBodyAcc"             "fBodyAccJerk"         "fBodyAccMag"         
-	"fBodyBodyAccJerkMag"  "fBodyBodyGyroJerkMag" "fBodyBodyGyroMag"    
-	"fBodyGyro"            "tBodyAcc"             "tBodyAccJerk"        
-	"tBodyAccJerkMag"      "tBodyAccMag"          "tBodyGyro"           
-	"tBodyGyroJerk"        "tBodyGyroJerkMag"     "tBodyGyroMag"        
-	"tGravityAcc"          "tGravityAccMag"  
+		- "fBodyAcc"             "fBodyAccJerk"         "fBodyAccMag"         
+		"fBodyBodyAccJerkMag"  "fBodyBodyGyroJerkMag" "fBodyBodyGyroMag"    
+		"fBodyGyro"            "tBodyAcc"             "tBodyAccJerk"        
+		"tBodyAccJerkMag"      "tBodyAccMag"          "tBodyGyro"           
+		"tBodyGyroJerk"        "tBodyGyroJerkMag"     "tBodyGyroMag"        
+		"tGravityAcc"          "tGravityAccMag"  
 * Measure
 	- either std (standard deviation) or mean
 * Axis
