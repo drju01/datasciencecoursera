@@ -4,10 +4,10 @@ In order to run the script make sure you set your working directory (setwd()) to
 (ie. "UCI HAR Dataset" directory).
 
 The R script run_analysis.R works as follows:
- 1) verifies that your working directory is "UCI HAR Dataset"
- 2) loads necessary packages (and installs them first if necessary)
- 3) reads dictionary datasets first (ie. features.txt and activity_labels.txt)
- 4) iterates over "test" and "train" directories performing the following actions:
+ - verifies that your working directory is "UCI HAR Dataset"
+ - loads necessary packages (and installs them first if necessary)
+ - reads dictionary datasets first (ie. features.txt and activity_labels.txt)
+ - iterates over "test" and "train" directories performing the following actions:
     a) reads main dataset as one field dataset and splits it into separate fields
     b) sets column names in line with "features" vector
     c) adds "SetType" column (to distinguish "test" and "train" datasets)
@@ -17,11 +17,11 @@ The R script run_analysis.R works as follows:
     f) stores data.table in list
  5) after "test" and "train" datasets have been adjusted, the script unions them 
  6) next, all the unnecessary columns are removed (ie. other than std() or mean() related masures and main descriptive attributes)
- 7) the dataset is reshaped, all measure names and corrsponding measure values are normalized into 2 columns (melt)
- 8) -XYZ suffix is added to measure names without axis information
- 9) measure name column is split into 3 attributes, ie. Signal, Measure and Axis
-10) average of each measure value is calculated across Subject, Activity, SetType, Signal, Measure, Axis
-11) resulting dataset is saved to xy_avg.txt
+ - the dataset is reshaped, all measure names and corrsponding measure values are normalized into 2 columns (melt)
+ - -XYZ suffix is added to measure names without axis information
+ - measure name column is split into 3 attributes, ie. Signal, Measure and Axis
+ - average of each measure value is calculated across Subject, Activity, SetType, Signal, Measure, Axis
+ - resulting dataset is saved to xy_avg.txt
 
 
 DATA DICTIONARY - xy_avg.txt
